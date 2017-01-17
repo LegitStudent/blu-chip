@@ -1,0 +1,14 @@
+{
+  "name": "wikillama",
+  "version": "0.0.1",
+  "description": "A Messenger bot for Wikipedia articles.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "JF <jasper.francisco@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.14.0"
+  }
+}
