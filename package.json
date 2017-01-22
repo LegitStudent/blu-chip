@@ -1,7 +1,7 @@
 {
-  "name": "wikillama",
+  "name": "bluchip",
   "version": "0.0.1",
-  "description": "A Messenger bot for Wikipedia articles.",
+  "description": "A Messenger bot for providing important financial data.",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
