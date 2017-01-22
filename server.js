@@ -3,7 +3,7 @@ const express = require('express');
 const bodyParser = require('body-parser');
 
 // File Dependencies
-const m = require('./messenger.js');
+const m = require('./messenger/routing.js');
 
 // Initialize app with Express framework.
 const app = express();
@@ -42,6 +42,8 @@ app.post('/webhook', function(req, res) {
             entry.messaging.forEach(function(event) {
                 if (event.message) {
                     m.receivedMessage(event);
+                } else if (event.postback) {
+                    m.receivedPostback(event);  
                 } else {
                   console.log("Webhook received unkown event: ", event);  
                 }
