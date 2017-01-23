@@ -13,7 +13,7 @@ const stockTool = require('../stocks.js');
 function callSendAPI(messageData) {
     request({
         uri: "https://graph.facebook.com/v2.6/me/messages",
-        qs: { access_token: "EAAZAhsDpOKPYBADY1DHVqlfzOc5HuwbDXQXS1gszoCQewT5Q9aJjhvePNfUED60oAtZBDl7g10pbEgdJAh4OYiGn84We4ehy7YPs0ngZBDD0oyi0lph5ZAMeYCMQxfB6HZC5LXcA7ZAhNHYfqg8VRWPAXFjcv45KDJk2GeX0cVfAZDZD" },
+        qs: { access_token: "" },
         method: "POST",
         body: messageData,
         json: true
