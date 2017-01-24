@@ -4,6 +4,7 @@
 */
 
 // NPM Dependencies
+require('dotenv').config();
 const request = require('request');
 const cheerio = require('cheerio');
 
@@ -13,7 +14,7 @@ const stockTool = require('../stocks.js');
 function callSendAPI(messageData) {
     request({
         uri: "https://graph.facebook.com/v2.6/me/messages",
-        qs: { access_token: "" },
+        qs: { access_token: process.env.ACCESS_TOKEN },
         method: "POST",
         body: messageData,
         json: true
