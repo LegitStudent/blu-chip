@@ -3,7 +3,7 @@ const request = require('request');
 const options = {
     method: 'POST',
     uri: 'https://graph.facebook.com/v2.6/me/thread_settings',
-    qs: { access_token: "" },
+    qs: { access_token: process.env.ACCESS_TOKEN },
     body: {
         setting_type: "call_to_actions",
         thread_state: "new_thread",
